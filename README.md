@@ -19,7 +19,7 @@ cd DeepSurf
 ```
 python3 -m venv venv --prompt DeepSurf
 source venv/bin/activate
-pip install -r requirements.txt
+pip install -r ./Final_Degree_Thesis/requirements.txt
 ```
 4) Compile custom LDS module
 ```
