@@ -53,3 +53,11 @@ python predict.py -p protein.pdb -mp model_path -o output_path
 
 For more input options, check 'predict.py'. All other molecules (waters, ions, ligands) should be removed from the structure. If the input protein has not been protonated, add --protonate to the execution command.\
 The provided models have been trained on a subset of scPDB (training_subset_of_scpdb.proteins)
+
+Usage example in my computer
+------------------------------
+
+```
+python Final_Degree_Thesis/DeepSurf_Files/predict.py -p Final_Degree_Thesis/data/test/coach420/1a2k/protein.pdb -mp Final_Degree_Thesis/models -o .
+
+```
