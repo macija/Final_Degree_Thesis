@@ -44,6 +44,52 @@ sudo make install
 cd ..
 ```
 
+================================================================
+Para reinstalar Python 3.6.15 y crear un entorno virtual con esa versión, sigue estos pasos:
+
+1. **Descargar los archivos**: Asegúrate de tener los archivos tar y tgz de Python 3.6.15 en tu directorio de descargas:
+https://www.python.org/downloads/release/python-3615/
+
+2. **Extraer los archivos**:
+    ```bash
+    cd ~/Baixades
+    tar -xzf Python-3.6.15.tgz
+    ```
+
+3. **Instalar Python 3.6.15**:
+    ```bash
+    cd Python-3.6.15
+    ./configure --enable-optimizations --prefix=$HOME/python3.6.15
+    make -j 8
+    make altinstall
+    ```
+
+4. **Crear el entorno virtual**:
+    ```bash
+    cd ~/Documents/TFG
+   /home/sofia-capua/python3.6.15/bin/python3.6 -m venv ~/Documents/TFG/tfg
+    ```
+
+5. **Activar el entorno virtual**:
+    ```bash
+    source tfg/bin/activate
+    ```
+
+6. **Actualizar pip y setuptools**:
+    ```bash
+    pip install --upgrade pip setuptools wheel
+    ```
+
+7. **Instalar los requerimientos**:
+    ```bash
+    pip install -r Final_Degree_Thesis/requirements.txt
+    ```
+
+Estos pasos deberían permitirte reinstalar Python 3.6.15 y crear un entorno virtual correctamente.
+
+In case of "Segmentation fault (core dumped)" use: https://stackoverflow.com/questions/74553858/how-to-fix-python-pip-segmentation-fault-core-dumped-response-from-virtualenv
+================================================================================
+
 Usage example
 ---------------
 
